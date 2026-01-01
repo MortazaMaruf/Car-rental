@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Exceptional Driving Experience",
+    "rating": 3,
+    "description": "The car was in perfect condition and the entire booking process was smooth and hassle-free. Highly recommended for luxury travel.",
+    "location": "New York, USA"
+  },
+  {
+    "title": "Premium Service & Comfort",
+    "rating": 4,
+    "description": "Great customer service and very comfortable vehicles. Delivery was on time and the staff was professional.",
+    "location": "Los Angeles, USA"
+  },
+  {
+    "title": "Worth Every Penny",
+    "rating": 5,
+    "description": "From pickup to drop-off, everything was seamless. The car quality exceeded my expectations.",
+    "location": "London, UK"
+  },
+  {
+    "title": "Reliable and Stylish",
+    "rating": 2,
+    "description": "The vehicle was stylish and well-maintained. A reliable choice for both business and leisure trips.",
+    "location": "Dubai, UAE"
+  },
+  {
+    "title": "Luxury Made Easy",
+    "rating": 3,
+    "description": "Booking a luxury car has never been this easy. Excellent experience with top-tier service and support.",
+    "location": "Toronto, Canada"
+  },
+   {
+    "title": "Amazing Customer Service",
+    "rating": 3,
+    "description": "The staff was extremely helpful and attentive throughout the rental process. Highly recommend!",
+    "location": "San Francisco, USA"
+  },
+  {
+    "title": "Comfortable & Smooth Ride",
+    "rating": 2,
+    "description": "The car was very comfortable and the ride was smooth. Everything went perfectly.",
+    "location": "Berlin, Germany"
+  },
+  {
+    "title": "Luxury at its Best",
+    "rating": 4,
+    "description": "I felt like a VIP from start to finish. The luxury car exceeded all my expectations.",
+    "location": "Paris, France"
+  },
+  {
+    "title": "Quick and Reliable",
+    "rating": 3,
+    "description": "The booking was quick and reliable. Vehicle was on time and in excellent condition.",
+    "location": "Tokyo, Japan"
+  },
+  {
+    "title": "Exceptional Driving Experience",
+    "rating": 2,
+    "description": "A seamless experience with top-notch service and a well-maintained car.",
+    "location": "Sydney, Australia"
+  }
+]

@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+   input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+*::selection {
+  color: white;
+  background-color: #BFA37C;
+}
+*{
+
+  font-family: "Google Sans", sans-serif;
+}

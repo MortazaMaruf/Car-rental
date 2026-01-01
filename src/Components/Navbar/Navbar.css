@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap');
+.logo{
+   font-family: "BBH Bartle", sans-serif;}
+   .navbar-overlay {
+  position: absolute;      /* carousel এর উপর বসবে */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;             /* carousel এর থেকে উপরে */
+  background: transparent; /* transparent navbar */
+}
