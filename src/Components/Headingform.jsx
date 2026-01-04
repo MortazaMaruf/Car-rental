@@ -1,27 +1,55 @@
+
 import React from 'react'
 import Button from './Button'
 
 const Headingform = () => {
   return (
-    <div>
-     <div className='flex items-center justify-center gap-10'>
-        <div >
-         <input type="text" name="" id="" placeholder='Choose  location' className='w-70 outline-none border-b border-white p-3' />
-     </div>
-        <div >
-         <input type="date" name="" id="" placeholder='Select Date' className='w-70 outline-none border-b border-white p-3' />
-     </div>
-        <div >
-         <input type="time" name="" id="" placeholder='Select time' className='w-70 outline-none border-b border-white p-3' />
-     </div>
-        <div >
-         <input type="text" name="" id="" placeholder='Drop of  location' className='w-70 outline-none border-b border-white p-3' />
-     </div>
-     <div>
-        <Button text={"send"}/>
-     </div>
-     
-     </div>
+    <div className="w-full px-2 sm:px-4 ">
+      <div
+        className="
+          grid
+          grid-cols-1
+          sm:grid-cols-2
+          lg:grid-cols-4
+          gap-3
+          items-center
+          justify-center
+          bg-black/25
+          p-3
+          rounded-md
+        "
+      >
+        {/* Pickup Location */}
+        <input
+          type="text"
+          placeholder="Choose location"
+          className="w-full outline-none border-b border-white p-2 bg-transparent text-white placeholder-white text-sm"
+        />
+
+        {/* Date */}
+        <input
+          type="date"
+          className="w-full outline-none border-b border-white p-2 bg-transparent text-white placeholder-white text-sm"
+        />
+
+        {/* Time */}
+        <input
+          type="time"
+          className="w-full outline-none border-b border-white p-2 bg-transparent text-white placeholder-white text-sm"
+        />
+
+        {/* Drop Location */}
+        <input
+          type="text"
+          placeholder="Drop off location"
+          className="w-full outline-none border-b border-white p-2 bg-transparent text-white placeholder-white text-sm"
+        />
+
+        {/* Button */}
+        <div className="w-full sm:col-span-2 lg:col-span-4 mt-2 flex justify-center">
+          <Button text="Send" />
+        </div>
+      </div>
     </div>
   )
 }

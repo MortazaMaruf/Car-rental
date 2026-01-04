@@ -1,12 +1,13 @@
+
 import React, { useEffect, useState } from "react";
 import Carousel1 from '../Images/h1-rev-img-1b.jpg'
 import Carousel2 from '../Images/h1-rev-img-2b.jpg'
 import Carousel3 from '../Images/h1-rev-img-3b.jpg'
 import Carousel4 from '../Images/h1-rev-img-4b.jpg'
 import Headingtitle from "./Headingtitle";
+import Headingform from './Headingform'
 
-const images = [
-  Carousel1,Carousel2,Carousel3,Carousel4];
+const images = [Carousel1, Carousel2, Carousel3, Carousel4];
 
 const Heading = () => {
   const [current, setCurrent] = useState(0);
@@ -16,7 +17,6 @@ const Heading = () => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
     }, 3000);
-
     return () => clearInterval(interval);
   }, []);
 
@@ -31,7 +31,7 @@ const Heading = () => {
   };
 
   return (
-    <div className="w-screen h-screen relative">
+    <div className="w-screen relative h-[70vh] md:h-[85vh] lg:h-screen">
       <div className="relative w-full h-full overflow-hidden">
         {images.map((img, index) => (
           <img
@@ -44,22 +44,43 @@ const Heading = () => {
           />
         ))}
 
-        {/* Navigation buttons */}
+        {/* Prev Button - visible only on lg */}
         <button
           onClick={prevSlide}
-          className="btn btn-circle absolute left-5 top-1/2 -translate-y-1/2"
+          className="hidden lg:block absolute
+            left-5
+            top-1/2
+            -translate-y-1/2
+            bg-black/50 text-white
+            w-12 h-12
+            rounded-full
+          "
         >
           ❮
         </button>
 
+        {/* Next Button - visible only on lg */}
         <button
           onClick={nextSlide}
-          className="btn btn-circle absolute right-5 top-1/2 -translate-y-1/2"
+          className="hidden lg:block absolute
+            right-5
+            top-1/2
+            -translate-y-1/2
+            bg-black/50 text-white
+            w-12 h-12
+            rounded-full
+          "
         >
           ❯
         </button>
       </div>
-      <Headingtitle/>
+
+      {/* Title Overlay */}
+      <div className="absolute inset-0 flex items-center justify-center px-4 ">
+        <Headingtitle />
+      </div>
+
+      
     </div>
   );
 };

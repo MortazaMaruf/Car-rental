@@ -20,14 +20,21 @@ const TestimonialSlider = () => {
 
   return (
     <Swiper
-      slidesPerView={3}
-      spaceBetween={30}
+      slidesPerView={1} // default for mobile
+      spaceBetween={20}
+      loop={true}
       autoplay={{
-        delay: 2000,
+        delay: 3000,
         disableOnInteraction: false,
       }}
+      pagination={{ clickable: true }}
+      breakpoints={{
+        640: { slidesPerView: 1, spaceBetween: 20 },   // sm
+        768: { slidesPerView: 2, spaceBetween: 25 },   // md
+        1024: { slidesPerView: 3, spaceBetween: 30 },  // lg
+      }}
       modules={[Pagination, Autoplay]}
-      className="mySwiper"
+      className="mySwiper w-full"
     >
       {testimonials.map((item, index) => (
         <SwiperSlide key={index}>
