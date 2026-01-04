@@ -27,7 +27,7 @@ const HomeCarInfo = () => {
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10 lg:gap-20 mb-16">
           {/* Left */}
           <div className="flex-1">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold leading-snug text-white">
+            <h1 className=" text-2xl md:text-5xl lg:text-5xl font-bold leading-snug text-white">
               What We Provide Is The Luxury <br /> Transport And Most Comfortable <br /> Experience
             </h1>
           </div>
