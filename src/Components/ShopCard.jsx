@@ -20,7 +20,7 @@ const ShopCard = ({ id, img, title, category, cost }) => {
           />
 
           {/* Hover Overlay */}
-          <div className="hidden group-hover:flex absolute inset-0 bg-black/70 items-center justify-center rounded-lg">
+          <div className="hidden lg:group-hover:flex absolute inset-0 bg-black/70 items-center justify-center rounded-lg">
             <Button text="Add to cart" onclick={() => addToCart(product)} />
           </div>
 
@@ -37,6 +37,9 @@ const ShopCard = ({ id, img, title, category, cost }) => {
               <sup className="text-[#BFA37C] text-sm sm:text-lg">$</sup>{cost}
             </h1>
           </div>
+           <div className="block lg:hidden ">
+              <Button text="Add to cart" onclick={() => addToCart(product)} />
+            </div>
         </div>
       </div>
     </div>
