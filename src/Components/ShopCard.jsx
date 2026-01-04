@@ -1,7 +1,12 @@
 import React from 'react'
 import Button from './Button'
+import {useCart} from '../assets/cartContext'
 
-const ShopCard = ({ img, title, category, cost }) => {
+const ShopCard = ({ id, img, title, category, cost }) => {
+        const {addToCart} = useCart();
+        const product = {id,img,title,category,cost};
+        
+        
 
     return (
         <div className='cursor-pointer'>
@@ -12,7 +17,9 @@ const ShopCard = ({ img, title, category, cost }) => {
                             className='w-full' />
                         <div className='hidden group-hover:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black/80 w-full h-full '>
                             <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
-                                <Button text={"Add to cart"}/>
+                                <Button 
+                                text={"Add to cart"} 
+                                onclick={()=> addToCart(product)}/>
                             </div>
                         </div>
                     </div>

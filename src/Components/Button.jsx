@@ -2,9 +2,9 @@ import React from 'react'
 import { GoPlus } from "react-icons/go";
 import { HiMinusSmall } from "react-icons/hi2";
 
-const Button = ({text}) => {
+const Button = ({text,onclick}) => {
   return (
-    <div className='group border border-[#BFA37C] px-10 py-3  flex items-center justify-center gap-4 cursor-pointer'>
+    <div className='group border border-[#BFA37C] px-10 py-3  flex items-center justify-center gap-4 cursor-pointer' onClick={onclick}>
         <div className='group-hover:hidden transition-all group-hover:duration-500'>
             <GoPlus  size={20}/>
         </div>
