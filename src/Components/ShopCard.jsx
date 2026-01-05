@@ -27,7 +27,7 @@ const ShopCard = ({ id, img, title, category, cost }) => {
         </div>
 
         {/* Title, Category, Cost */}
-        <div className="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center mt-4 gap-2">
+        <div className="flex flex-col md:flex-col sm:flex-row sm:justify-between items-start sm:items-center mt-4 gap-2">
           <div>
             <h1 className="text-xl sm:text-2xl font-semibold">{title}</h1>
             <h2 className="text-[#BFA37C] tracking-widest uppercase text-sm sm:text-md">{category}</h2>
